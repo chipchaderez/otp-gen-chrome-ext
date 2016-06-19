@@ -1,6 +1,6 @@
 {
-  "name": "Basic OTP Token Generator",
-  "version": "1.0",
+  "name": "Simple OTP Token Generator",
+  "version": "1.0.0.1",
   "manifest_version": 2,
   "description": "OTP Token Generator",
   "browser_action": {
