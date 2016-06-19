@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="scripts/lib/jquery.min.js"></script>
+    <script src="scripts/lib/bootstrap.min.js"></script>
+    <script src="scripts/lib/hotp.js"></script>
+    <script src="scripts/lib/2.0.0-crypto-sha1.js"></script>
+    <script src="scripts/lib/2.0.0-hmac-min.js"></script>
+    <script src="scripts/lib/clipboard.min.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/key-utils.js"></script>
+</head>
+<style>
+    .button_img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .button {
+        background: none;
+        padding: 0;
+        text-align: right;
+        vertical-align: middle;
+    }
+
+    .otp_label {
+        margin-left: 20px;
+        margin-bottom: 0;
+        margin-top: 2px;
+        font-family: 'Courier New', monospace;
+        font-weight: bold;
+    }
+</style>
+<body>
+<div class="container-fluid" style="width: 220px; height: 110px;">
+    <h4 style="text-decoration: underline; text-align: center;"><span><i>OTP Token Generator</i></span></h4>
+    <h3>
+        <label id="otp" class="otp_label">------</label>
+        <div style="float: right; margin-right: 20px;">
+            <button id="copy_button" class="btn button" data-clipboard-target="#otp">
+                <img src="assets/clippy.svg" class="button_img" alt="Copy to clipboard">
+            </button>
+            <button id="refresh_button" class="btn button">
+                <img src="assets/refresh.png" class="button_img" alt="Refresh Token">
+            </button>
+        </div>
+
+    </h3>
+    <a id="go-to-options" style="float: right; cursor: pointer;">Options</a>
+</div>
+
+</body>
+</html>
