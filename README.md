@@ -25,6 +25,12 @@ Use 'Paste OTP Token' right-click menu action to paste a new token into any text
 
 ![Context Menu](/screenshots/ext_paste.png)
 
+### Keyboard Shortcuts
+
+Default 'Paste OTP Token' HotKey: <i>Alt+T</i>
+
+(configurable on 'chrome://extensions/configureCommands')
+
 ## Notes
 
 * The extension stores locally only the secret and counter required for the HMAC-based One-time Password Algorithm.
